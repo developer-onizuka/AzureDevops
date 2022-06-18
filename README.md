@@ -101,3 +101,30 @@ $ git push -u origin developing
 # 6-2. You need a Pull Request to merge into Master Branch
 After doing git push in #6, you can do "pull request" in Azure Devops so that this commit can be merged into Master Branch.
 
+# 6-3. Git Merge on local repositry
+You can find the Master Branch is behind the developing Branch even after git push.
+```
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+$ cat FileA.txt 
+2022-06-13 16:18
+2022-06-13 20:12 (developing)
+```
+
+Then, You should merge as followings:
+```
+$ git merge developing
+Updating 943aa47..19d81dd
+Fast-forward
+ FileA.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ cat FileA.txt 
+2022-06-13 16:18
+2022-06-13 20:12 (developing)
+2022-06-18 10:58 (developing)
+```
+
