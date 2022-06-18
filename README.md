@@ -104,6 +104,10 @@ $ git push -u origin developing
 # 6-2. You need a Pull Request to merge into Master Branch
 After doing git push in #6-1, you can do "pull request" in Azure Devops so that this commit can be merged into Master Branch.
 
+<br>
+<img src="https://github.com/developer-onizuka/AzureDevops/blob/main/AzureDevops.png" width="640">
+<br>
+
 # 6-3. Git Merge on local repositry
 You can find the Master Branch is behind the developing Branch even after git push.
 ```
