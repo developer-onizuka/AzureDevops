@@ -43,7 +43,7 @@ To https://dev.azure.com/.../myapp/_git/myapp
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
-# 5. Push w/o Branch Policy (not requiring Pull Requests)
+# 5. Git Push w/o Branch Policy (not requiring Pull Requests)
 # 5-1. Git Branch
 ```
 $ git status
@@ -82,7 +82,7 @@ $ cat FileA.txt
 2022-06-13 20:12 (developing)
 ```
 
-# 6. Push w/ Branch Policy (require Pull Requests)
+# 6. Git Push w/ Branch Policy (require Pull Requests)
 # 6-1. Git Branch, Add/Commit
 ```
 $ git chekcout developing
