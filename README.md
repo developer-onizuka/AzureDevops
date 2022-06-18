@@ -101,7 +101,7 @@ $ git commit -m "2022-06-18 10:58(developing)"
 $ git push -u origin developing
 ```
 
-# 6-2. You need a Pull Request to merge into Master Branch
+# 6-2. You need a Pull Request to merge the developing Branch into the Master Branch
 After doing git push in #6-1, you can do "pull request" in Azure Devops so that this commit can be merged into Master Branch.
 
 <br>
