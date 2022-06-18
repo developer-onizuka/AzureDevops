@@ -9,6 +9,7 @@ Initialized empty Git repository in /mnt/myapp/.git/
 # 2. Create Files
 ```
 $ vi FileA.txt
+2022-06-13 16:18
 
 $ ls
 FileA.txt
@@ -62,7 +63,9 @@ FileA.txt
 $ cat FileA.txt 
 2022-06-13 16:18
 
-$ vi FileA.txt 
+$ vi FileA.txt
+2022-06-13 16:18
+2022-06-13 20:12 (developing)
 ```
 # 5-2. Git Add/Commit
 ```
@@ -84,7 +87,7 @@ $ cat FileA.txt
 ```
 $ git chekcout developing
 
-$ cat FileA.txt 
+$ vi FileA.txt 
 2022-06-13 16:18
 2022-06-13 20:12 (developing)
 2022-06-18 10:58 (developing)
