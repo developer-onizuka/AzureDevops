@@ -42,7 +42,8 @@ To https://dev.azure.com/.../myapp/_git/myapp
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
-# 5. Git Branch, Add/Commit and Push w/o Branch Policy (not requiring Pull Requests)
+# 5. Push w/o Branch Policy (not requiring Pull Requests)
+# 5-1. Git Branch
 ```
 $ git status
 On branch master
@@ -62,7 +63,9 @@ $ cat FileA.txt
 2022-06-13 16:18
 
 $ vi FileA.txt 
-
+```
+# 5-2. Git Add/Commit
+```
 $ git add FileA.txt 
 
 $ git commit -m "2022-06-13 20:12(developing)"
@@ -76,7 +79,8 @@ $ cat FileA.txt
 2022-06-13 20:12 (developing)
 ```
 
-# 6. Git Branch, Add/Commit and Push w/ Branch Policy (require Pull Requests)
+# 6. Push w/ Branch Policy (require Pull Requests)
+# 6-1. Git Branch, Add/Commit
 ```
 $ git chekcout developing
 
@@ -94,6 +98,6 @@ $ git commit -m "2022-06-18 10:58(developing)"
 $ git push -u origin developing
 ```
 
-# 7. Pull Request
-After doing git push in #6, you can do "pull request" in Azure Devops so that this commit can be merged into Master branch.
+# 6-2. You need a Pull Request to merge into Master Branch
+After doing git push in #6, you can do "pull request" in Azure Devops so that this commit can be merged into Master Branch.
 
