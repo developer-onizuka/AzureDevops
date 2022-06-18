@@ -28,7 +28,7 @@ $ git commit -m "2022-06-13 16:18"
 ```
 $ git remote add origin https://xxx@dev.azure.com/xxx/myapp/_git/myapp
 
-$ git push -u origin --all
+$ git push -u origin master
 Password for 'https://xxx@dev.azure.com': 
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
