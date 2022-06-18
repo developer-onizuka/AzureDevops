@@ -1,22 +1,31 @@
 # AzureDevops
 
+# 1. Init
 ```
 $ git init
 Initialized empty Git repository in /mnt/myapp/.git/
+```
 
+# 2. Create Files
+```
 $ vi FileA.txt
 
 $ ls
 FileA.txt
+```
 
+# 3. Git Add/Commit
+```
 $ git add FileA.txt 
 
 $ git commit -m "2022-06-13 16:18"
 [master (root-commit) 23a05e3] 2022-06-13 16:18
  1 file changed, 1 insertion(+)
  create mode 100644 FileA.txt
+```
  
- 
+# 4. Git Push w/o Branch Plicy (not requiring Pull Requests)
+```
 $ git remote add origin https://xxx@dev.azure.com/xxx/myapp/_git/myapp
 
 $ git push -u origin --all
@@ -31,7 +40,10 @@ remote: Storing index... done (54 ms)
 To https://dev.azure.com/.../myapp/_git/myapp
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
 
+# 5. Git Branch, Add/Commit and Push w/o Branch Plicy (not requiring Pull Requests)
+```
 $ git status
 On branch master
 Your branch is up to date with 'origin/master'.
