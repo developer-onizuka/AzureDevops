@@ -93,6 +93,7 @@ $ git commit -m "2022-06-18 10:58(developing)"
  
 $ git push -u origin developing
 ```
-After git push, you can do "pull request" in Azure Devops so that this commit can be merged into Master branch.
----
+
+# 7. Pull Request
+After doing git push in #6, you can do "pull request" in Azure Devops so that this commit can be merged into Master branch.
 
